@@ -2,7 +2,7 @@
 API hỗ trợ kiểm tra tên người dùng từ Số tài khoản Ngân hàng bao gồm:
  - Tên chủ tài khoản
 ----
-[Xem Demo tại đây](https://httzip.com/cong-cu/bank/id-lookup)
+[Xem Demo tại đây](https://banklookup.net)
 ### Hướng dẫn sử dụng
 - Chọn Ngân hàng
 - Nhập Số tài khoản cần kiểm tra
@@ -17,11 +17,11 @@ Vì đây là bản thử nghiệm dùng rộng rãi nên sẽ giới hạn mộ
 # API Document
 ##### URL
 > ```javascript
->  https://api.httzip.com
+>  https://api.banklookup.net
 > ```
 <details>
  
- <summary><code>POST</code> <code><b>/api/bank/id-lookup</b></code></summary>
+ <summary><code>POST</code> <code><b>/api/bank/id-lookup-prod</b></code></summary>
 
 ##### Header
 > | Header      |  type     | data type               | description                                                           |
@@ -32,7 +32,7 @@ Vì đây là bản thử nghiệm dùng rộng rãi nên sẽ giới hạn mộ
 ##### Body (Json)
 > | Payload      |  type     | data type               | description                                                           |
 > |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
-> | bank      |  required | string   | Mã code ngân hàng: Xem các Bank hỗ trợ : https://api.httzip.com/api/bank/list
+> | bank      |  required | string   | Mã code ngân hàng: Xem các Bank hỗ trợ : https://api.banklookup.net/api/bank/list
 > | account      |  required | string   | Số tài khoản cần kiểm tra|
 ##### Example Payload (json)
 ````json
@@ -64,5 +64,3 @@ Vì đây là bản thử nghiệm dùng rộng rãi nên sẽ giới hạn mộ
 ````
 </details>
 
-### Sử dụng nâng cao
-Nếu bạn muốn tích hợp sử dụng nâng cao? Hãy liên hệ với tôi (httzip@gmail.com | https://t.me/httzip) nhé!
